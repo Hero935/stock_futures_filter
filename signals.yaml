@@ -1,0 +1,12 @@
+buy_signal:
+  or:
+    - and:
+        - {"MACD_Hist": "< 0"}
+        - {"K": "< 20"}
+
+sell_signal:
+  or:
+    - and:
+        - {"MACD_Hist": "> 0"}
+        - {"K": "> 80"}
+
